@@ -1,23 +1,15 @@
-# 🚁 SkyMind AI - Autonomous Multi-Robot Fleet Orchestrator
+#  SkyMind AI - Autonomous Multi-Robot Fleet Orchestrator
 
 > **AI-powered robotics fleet with Gemini 3 Flash making real-time autonomous decisions**  
 > Built for [lablab.ai AI Meets Robotics Hackathon](https://lablab.ai/event/launch-fund-ai-meets-robotics)
 
 [![Demo](https://img.shields.io/badge/Demo-Live-success)](https://sky-mind-nine.vercel.app/) [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) [![Track](https://img.shields.io/badge/Track-Autonomous%20Robotics%20Control-orange)](https://lablab.ai/event/launch-fund-ai-meets-robotics)
 
-**🎯 Competition Track:** Track 1 - Autonomous Robotics Control in Simulation
+** Competition Track:** Track 1 - Autonomous Robotics Control in Simulation
 
----
 
-## 🎥 Demo & Submission
 
-**[▶️ Watch Demo Video on X/Twitter](YOUR_TWITTER_POST_LINK)** ← Required for prize eligibility  
-**[🌐 Try Live Demo](https://sky-mind-nine.vercel.app/)**  
-**[💻 GitHub Repository](https://github.com/Tasfia-17/SkyMind)**
-
----
-
-## 🎯 Problem Statement
+##  Problem Statement
 
 Modern warehouse, logistics, and industrial operations need intelligent robotics coordination that:
 - Adapts to real-time conditions (battery, position, obstacles)
@@ -33,7 +25,7 @@ Modern warehouse, logistics, and industrial operations need intelligent robotics
 
 ---
 
-## 💡 Our Solution
+##  Our Solution
 
 **SkyMind AI** is a simulation-first, multi-robot orchestration platform powered by **Google Gemini 3 Flash** that provides:
 
@@ -52,7 +44,7 @@ Modern warehouse, logistics, and industrial operations need intelligent robotics
 
 ---
 
-## 🤖 Supported Robot Types
+##  Supported Robot Types
 
 SkyMind AI provides a comprehensive robotics simulation platform with **7 robot categories** and **15+ robot models**:
 
@@ -109,7 +101,7 @@ SkyMind AI provides a comprehensive robotics simulation platform with **7 robot 
 
 ---
 
-### 4. 🦾 Manipulators (Robotic Arms & Hands)
+### 4.  Manipulators (Robotic Arms & Hands)
 
 **Shadow Hand**
 - 24 degrees of freedom
@@ -219,7 +211,7 @@ SkyMind AI provides a comprehensive robotics simulation platform with **7 robot 
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 - Node.js 20+
@@ -558,9 +550,7 @@ MIT License - See [LICENSE](LICENSE) for details.
 - **🏆 Hackathon:** https://lablab.ai/event/launch-fund-ai-meets-robotics
 - **🤖 Gemini AI:** https://ai.google.dev/
 - **☁️ Vultr Cloud:** https://www.vultr.com/
-- **🐦 X/Twitter Post:** [YOUR_TWITTER_POST_LINK] ← **Required for prizes**
 
----
 
 ## 👥 Team
 
@@ -570,18 +560,6 @@ Built by [@Tasfia-17](https://github.com/Tasfia-17)
 
 ---
 
-## ⚠️ Prize Eligibility Checklist
 
-To be eligible for prizes, ensure you:
 
-- [x] Post final submission video on X/Twitter
-- [x] Tag @lablabai and @Surgexyz_ in the same post
-- [x] Include the X post link in the submission form
-- [x] Deploy backend on Vultr infrastructure
-- [x] Use Gemini AI for autonomous decision-making
-- [x] Provide public GitHub repository
-- [x] Provide public demo URL
-
----
-
-🚁 **SkyMind AI** - Making multi-robot fleets intelligent, transparent, and scalable
+ **SkyMind AI** - Making multi-robot fleets intelligent, transparent, and scalable
