@@ -570,20 +570,6 @@ MIT License - See [LICENSE](LICENSE) for details.
 
 Built by [@Tasfia-17](https://github.com/Tasfia-17)
 
-**Original MuJoCo WASM Contributors:**
-- [@AdvayIyer](https://github.com/AdvayIyer)
-- [@k1a11220](https://github.com/k1a11220)
-
----
-
-## 📖 Documentation
-
-- **[Complete Submission Guide](docs/HACKATHON_SUBMISSION_GUIDE.md)** - Full deployment walkthrough
-- **[Quick Reference](docs/QUICK_REFERENCE.txt)** - Quick start commands
-- **[Backend README](backend/README.md)** - Backend deployment details
-- **[Integration Guide](frontend/skymind-ai/INTEGRATION_GUIDE.js)** - Frontend integration
-
----
 
 **Built with ❤️ for autonomous robotics and AI innovation**
 
