@@ -1,120 +1,39 @@
-# 🚀 RoboScout - Quick Start (5 Minutes)
+# RoboScout - Quick Start
 
-## ⚡ Fastest Path to Submission
+## Deploy to Vercel (2 Steps)
 
-### Step 1: Test Locally (2 minutes)
+1. Go to https://vercel.com/new
+2. Import: `https://github.com/Tasfia-17/robo-scout.git`
+3. Click "Deploy"
+
+Done! Your site will be live in 2-3 minutes.
+
+## Run Locally
+
 ```bash
-cd RoboScout
-./deploy-local.sh
+cd robo-scout/mujoco_wasm
+python -m http.server 8000
 ```
 
-Open http://localhost:8000 and press F12 to see AI decisions.
+Open http://localhost:8000
 
----
+## Backend (Optional)
 
-### Step 2: Deploy to Vercel (1 minute)
-
-**Option A: If already connected to Vercel**
 ```bash
-git add .
-git commit -m "Submission-ready: Enhanced AI integration"
-git push origin main
-```
-Vercel will auto-deploy.
-
-**Option B: First time deployment**
-```bash
-vercel --prod
+cd robo-scout/backend
+npm install
+node web-agent-server.js
 ```
 
----
+Backend runs on http://localhost:3001
 
-### Step 3: Create X Post (1 minute)
+## What You'll See
 
-Copy this template and post on X/Twitter:
+- 3D robotics simulation
+- AI decisions every 2 seconds in console (F12)
+- TinyFish web automation active
+- Real-time fleet visualization
 
-```
-🚁 Just submitted RoboScout to @lablabai AI Meets Robotics Hackathon!
+## Submit to Hackathon
 
-🤖 Gemini 3 Flash makes autonomous decisions every 2 seconds
-🧠 Explainable AI - see reasoning for every action
-☁️ Vultr-ready backend architecture for fleet coordination
-⚡ 3 rotating API keys = zero rate limits
-
-Built for @Surgexyz_ funding opportunity
-
-🎮 Try it: https://sky-mind-nine.vercel.app/
-💻 Code: https://github.com/Tasfia-17/RoboScout
-
-#AIRobotics #AutonomousDrones #GeminiAI
-```
-
-**Copy the tweet URL after posting!**
-
----
-
-### Step 4: Submit on lablab.ai (1 minute)
-
-Go to: https://lablab.ai/event/launch-fund-ai-meets-robotics
-
-Fill in:
-- **Project Title:** RoboScout - Autonomous Drone Fleet Orchestrator
-- **Short Description:** AI-powered drone fleet with Gemini 3 Flash making real-time autonomous decisions
-- **GitHub:** https://github.com/Tasfia-17/RoboScout
-- **Demo URL:** https://sky-mind-nine.vercel.app/
-- **X Post URL:** [PASTE YOUR TWEET URL HERE]
-- **Tags:** Gemini AI, Vultr, MuJoCo, Autonomous Robotics
-- **Track:** Track 1 - Autonomous Robotics Control
-
----
-
-## ✅ Done!
-
-Your submission is complete. Here's what makes it strong:
-
-### 🎯 Key Strengths
-1. **Real AI Control** - Gemini 3 Flash actively making decisions
-2. **Visual Proof** - On-screen display + console logs
-3. **Vultr Architecture** - Production-ready backend included
-4. **Business Value** - Concrete ROI metrics
-5. **Professional** - Branded interface and documentation
-
-### 📊 What Judges Will See
-- Real-time AI decisions every 2 seconds
-- Explainable reasoning for each action
-- Professional interface with technology stack
-- Working demo they can interact with
-- Production-ready architecture
-
----
-
-## 🆘 Troubleshooting
-
-**"Local server won't start"**
-```bash
-cd mujoco_wasm
-python3 -m http.server 8000
-```
-
-**"No AI decisions in console"**
-- Wait 2 seconds (decisions happen every 120 frames)
-- Check for errors in console
-- Verify internet connection (needs to call Gemini API)
-
-**"Vercel deployment failed"**
-- Check vercel.json is in root directory
-- Ensure mujoco_wasm folder exists
-- Try: `vercel --prod --force`
-
----
-
-## 📞 Need Help?
-
-Check these files:
-- **SUBMISSION_GUIDE.md** - Complete submission checklist
-- **CHANGES_SUMMARY.md** - What was changed and why
-- **README.md** - Full project documentation
-
----
-
-**Good luck! You've got a winning submission! 🏆**
+https://forms.gle/VdDDP1fADVLiWE5MA
