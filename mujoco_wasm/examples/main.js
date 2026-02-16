@@ -16,16 +16,9 @@ import { InputManager } from "./utils/InputManager.js";
 import { createControllerForScene } from "./controllers/index.js";
 
 // ============================================
-// AI INTEGRATION - Gemini 3 Flash
+// AI INTEGRATION - SambaNova
 // ============================================
-// IMPORTANT: Set these in Vercel Environment Variables
-// Go to: Vercel Dashboard → Settings → Environment Variables
-const GEMINI_API_KEYS = window.ENV?.GEMINI_KEYS || [
-  "REPLACE_WITH_YOUR_KEY_1",
-  "REPLACE_WITH_YOUR_KEY_2",
-  "REPLACE_WITH_YOUR_KEY_3"
-];
-let currentKeyIndex = 0;
+const SAMBANOVA_API_KEY = "e5dff711-1df4-4d1f-adec-62c52de77ab3";
 let aiEnabled = true;
 let aiTarget = { x: 0, y: 0, z: 2 };
 let frameCount = 0;
@@ -36,37 +29,41 @@ let aiDecisionCount = 0;
 async function getAIDecision(pos, battery, vel) {
   if (!aiEnabled) return { target: aiTarget, reasoning: "AI disabled", action: "hover" };
   
-  const key = GEMINI_API_KEYS[currentKeyIndex];
-  currentKeyIndex = (currentKeyIndex + 1) % GEMINI_API_KEYS.length;
-  
   try {
-    const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${key}`, {
+    const res = await fetch('https://api.sambanova.ai/v1/chat/completions', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 
+        'Authorization': `Bearer ${SAMBANOVA_API_KEY}`,
+        'Content-Type': 'application/json' 
+      },
       body: JSON.stringify({
-        contents: [{
-          parts: [{ text: `Autonomous warehouse drone control.
+        model: "Meta-Llama-3.1-8B-Instruct",
+        messages: [{
+          role: "user",
+          content: `Autonomous warehouse drone control.
 Position: (${pos.x.toFixed(1)}, ${pos.y.toFixed(1)}, ${pos.z.toFixed(1)})
 Battery: ${battery.toFixed(0)}%
 Velocity: (${vel.x.toFixed(1)}, ${vel.y.toFixed(1)}, ${vel.z.toFixed(1)})
 
 Mission: Patrol warehouse area (-3 to 3 on x/y), inspect zones, return to base (0,0,2) if battery < 20%.
-Respond JSON only: {"action":"patrol|inspect|return_base|hover","target":{"x":2,"y":1,"z":2.5},"reasoning":"brief why"}` }]
-        }]
+Respond with ONLY valid JSON, no other text: {"action":"patrol","target":{"x":2,"y":1,"z":2.5},"reasoning":"brief why"}`
+        }],
+        temperature: 0.1,
+        max_tokens: 200
       })
     });
 
     const data = await res.json();
     if (data.error) throw new Error(data.error.message);
     
-    const text = data.candidates[0].content.parts[0].text;
+    const text = data.choices[0].message.content;
     const decision = JSON.parse(text.match(/\{[\s\S]*\}/)[0]);
     
     aiDecisionCount++;
     lastAIAction = decision.action;
     lastAIReasoning = decision.reasoning;
     
-    console.log(`🤖 AI Decision #${aiDecisionCount} (Key ${currentKeyIndex}/${GEMINI_API_KEYS.length}):`, decision.action);
+    console.log(`🤖 AI Decision #${aiDecisionCount} (SambaNova):`, decision.action);
     console.log(`   Reasoning: ${decision.reasoning}`);
     console.log(`   Target: (${decision.target.x}, ${decision.target.y}, ${decision.target.z})`);
     
@@ -92,7 +89,7 @@ function updateAIDisplay() {
         <div><strong>Target:</strong> (${aiTarget.x.toFixed(1)}, ${aiTarget.y.toFixed(1)}, ${aiTarget.z.toFixed(1)})</div>
         <div><strong>Battery:</strong> ${Math.max(0, 100 - (frameCount / 3600) * 100).toFixed(0)}%</div>
         <div style="margin-top: 8px; color: #ffff00;"><strong>Reasoning:</strong> ${lastAIReasoning}</div>
-        <div style="margin-top: 8px; font-size: 10px; color: #888;">Using Gemini 3 Flash • ${GEMINI_API_KEYS.length} API keys rotating</div>
+        <div style="margin-top: 8px; font-size: 10px; color: #888;">Powered by SambaNova AI</div>
       </div>
     `;
   }
