@@ -1,13 +1,13 @@
-# 🌐 SkyMind WebOps - Autonomous Robotics Fleet Web Agent
+# SkyMind WebOps - Autonomous Robotics Fleet Web Agent
 
-> **AI-powered web agent that autonomously manages robotics fleets by interacting with enterprise dashboards, logistics systems, and operational tools in real-time**  
+> **AI-powered web agent that autonomously manages robotics fleets by interacting with enterprise dashboards, logistics systems, and operational tools in real-time** 
 > Built for [Web Agents Hackathon](https://lu.ma/webagentshack) by TinyFish + r/AI_Agents
 
 [![Demo](https://img.shields.io/badge/Demo-Live-success)](https://sky-mind-nine.vercel.app/) [![TinyFish](https://img.shields.io/badge/TinyFish-Integrated-blue)](https://tinyfish.ai) [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 ---
 
-## 🎯 The Problem
+## The Problem
 
 Modern warehouse and logistics operations need AI agents that can:
 - **Monitor** real-time dashboards across multiple platforms
@@ -23,23 +23,23 @@ Modern warehouse and logistics operations need AI agents that can:
 
 ---
 
-## 💡 Our Solution
+## Our Solution
 
 **SkyMind WebOps** is an autonomous web agent that bridges the gap between physical robotics and digital operations by:
 
 ### Core Innovation
-- **🌐 Real Website Automation** - TinyFish API scrapes dashboards, updates systems, monitors platforms
-- **🤖 AI Decision Engine** - Gemini 3 Flash makes operational decisions based on web + robot data
-- **🔄 Two-Way Automation** - Reads from websites AND updates them (not just scraping)
-- **📊 Digital Twin Visualization** - 3D MuJoCo simulation shows real-time fleet state
-- **☁️ Production Backend** - Vultr-ready architecture for enterprise deployment
+- ** Real Website Automation** - TinyFish API scrapes dashboards, updates systems, monitors platforms
+- ** AI Decision Engine** - Gemini 3 Flash makes operational decisions based on web + robot data
+- ** Two-Way Automation** - Reads from websites AND updates them (not just scraping)
+- ** Digital Twin Visualization** - 3D MuJoCo simulation shows real-time fleet state
+- ** Production Backend** - Vultr-ready architecture for enterprise deployment
 
 ### How It Works
 
 ```
 Web Dashboards → TinyFish API → AI Decision Engine → Robot Commands
-     ↑                                    ↓
-     └──────── Status Updates ────────────┘
+ ↑ ↓
+ └──────── Status Updates ────────────┘
 ```
 
 1. **TinyFish scrapes** warehouse task boards, weather sites, maintenance systems
@@ -50,27 +50,27 @@ Web Dashboards → TinyFish API → AI Decision Engine → Robot Commands
 
 ---
 
-## 🏆 Why This Wins
+## Why This Wins
 
-### Business Scalability ✅
+### Business Scalability 
 - **Target Market**: $30B warehouse automation + $29B drone logistics
 - **Revenue Model**: $99/robot/month SaaS + enterprise tier
 - **Clear ROI**: 80% reduction in operator training, 40% efficiency gain
 
-### Technical Excellence ✅
+### Technical Excellence 
 - **Real web automation** via TinyFish (not just simulation)
 - **Multi-API key rotation** (3 Gemini keys = 45 req/min, zero rate limits)
 - **Explainable AI** (natural language reasoning for every decision)
 - **Production-ready** (Vultr backend, structured JSON, enterprise prompts)
 
-### Differentiation ✅
+### Differentiation 
 - **Only web agent with 3D digital twin visualization**
 - **Only robotics solution with two-way web automation**
 - **Enterprise-grade** (not a toy demo)
 
 ---
 
-## 🌐 Web Agent Capabilities
+## Web Agent Capabilities
 
 ### 1. Dashboard Monitoring (TinyFish)
 ```javascript
@@ -106,7 +106,7 @@ Returns: Market intelligence → Business strategy
 
 ---
 
-## 🤖 AI Decision Architecture
+## AI Decision Architecture
 
 ### System Prompt (Enterprise-Grade)
 ```
@@ -120,13 +120,13 @@ Decision priorities:
 
 Output format: Structured JSON only
 {
-  "action": "patrol|inspect|return_base|execute_task",
-  "target": {"x":2,"y":1,"z":2.5},
-  "priority_level": "high|medium|low",
-  "reasoning": "operational explanation",
-  "confidence": 0.95,
-  "requires_web_action": true,
-  "web_action_type": "update_dashboard"
+ "action": "patrol|inspect|return_base|execute_task",
+ "target": {"x":2,"y":1,"z":2.5},
+ "priority_level": "high|medium|low",
+ "reasoning": "operational explanation",
+ "confidence": 0.95,
+ "requires_web_action": true,
+ "web_action_type": "update_dashboard"
 }
 ```
 
@@ -142,7 +142,7 @@ Output format: Structured JSON only
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Node.js 20+
@@ -164,85 +164,85 @@ python -m http.server 8000
 
 Open http://localhost:8000 and press F12 to see:
 ```
-🌐 TinyFish: Fetched 3 warehouse tasks
-🤖 Web-Aware AI Decision #1 (Key 1/3): execute_task
-   Priority: high | Confidence: 95%
-   Reasoning: High-priority task T-14 at (4,2,0), battery sufficient
-   Target: (4.0, 2.0, 0.5)
-   🌐 Web Action Required: update_dashboard
+ TinyFish: Fetched 3 warehouse tasks
+ Web-Aware AI Decision #1 (Key 1/3): execute_task
+ Priority: high | Confidence: 95%
+ Reasoning: High-priority task T-14 at (4,2,0), battery sufficient
+ Target: (4.0, 2.0, 0.5)
+ Web Action Required: update_dashboard
 ```
 
 ---
 
-## 📡 API Documentation
+## API Documentation
 
 ### TinyFish Integration
 
 **Scrape Website Data:**
 ```bash
 curl -X POST https://agent.tinyfish.ai/v1/automation/run-sse \
-  -H "X-API-Key: sk-tinyfish-GNc7SJkKci7lviX152z59peTF8zC3-WO" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "url": "https://warehouse-dashboard.com/tasks",
-    "goal": "Extract all active tasks. Return JSON: {\"tasks\": []}"
-  }'
+ -H "X-API-Key: sk-tinyfish-GNc7SJkKci7lviX152z59peTF8zC3-WO" \
+ -H "Content-Type: application/json" \
+ -d '{
+ "url": "https://warehouse-dashboard.com/tasks",
+ "goal": "Extract all active tasks. Return JSON: {\"tasks\": []}"
+ }'
 ```
 
 **Web-Aware AI Decision:**
 ```bash
 curl -X POST http://localhost:3001/mission-web \
-  -H "Content-Type: application/json" \
-  -d '{
-    "position": {"x": 1.5, "y": 2.0, "z": 3.0},
-    "battery": 85,
-    "velocity": {"x": 0.1, "y": 0, "z": 0},
-    "web_data": {
-      "tasks": [{"task_id": "T-14", "priority": "high"}],
-      "weather": {"safe_to_fly": true}
-    }
-  }'
+ -H "Content-Type: application/json" \
+ -d '{
+ "position": {"x": 1.5, "y": 2.0, "z": 3.0},
+ "battery": 85,
+ "velocity": {"x": 0.1, "y": 0, "z": 0},
+ "web_data": {
+ "tasks": [{"task_id": "T-14", "priority": "high"}],
+ "weather": {"safe_to_fly": true}
+ }
+ }'
 ```
 
 ---
 
-## 🏗️ Architecture
+## ️ Architecture
 
 ```
 ┌─────────────────────────────────────────────────────┐
-│         ENTERPRISE WEB DASHBOARDS                   │
-│  (Warehouse Tasks | Weather | Maintenance | ERP)    │
+│ ENTERPRISE WEB DASHBOARDS │
+│ (Warehouse Tasks | Weather | Maintenance | ERP) │
 └────────────────┬────────────────────────────────────┘
-                 │ TinyFish API (Scrape + Update)
-                 ▼
+ │ TinyFish API (Scrape + Update)
+ ▼
 ┌─────────────────────────────────────────────────────┐
-│           SKYMIND WEBOPS BACKEND (Vultr)            │
-│  • TinyFish Integration (Web Automation)            │
-│  • Multi-API Key Rotation (3 Gemini Keys)           │
-│  • Telemetry Logging & Mission History             │
-│  • Fleet Coordination & Task Scheduling            │
+│ SKYMIND WEBOPS BACKEND (Vultr) │
+│ • TinyFish Integration (Web Automation) │
+│ • Multi-API Key Rotation (3 Gemini Keys) │
+│ • Telemetry Logging & Mission History │
+│ • Fleet Coordination & Task Scheduling │
 └────────────────┬────────────────────────────────────┘
-                 │ AI Decision Loop (Every 2s)
-                 ▼
+ │ AI Decision Loop (Every 2s)
+ ▼
 ┌─────────────────────────────────────────────────────┐
-│        GOOGLE GEMINI 3 FLASH (AI Brain)             │
-│  • Analyzes: Web data + Robot telemetry             │
-│  • Returns: Structured JSON + Reasoning             │
-│  • Confidence scoring + Web action triggers         │
+│ GOOGLE GEMINI 3 FLASH (AI Brain) │
+│ • Analyzes: Web data + Robot telemetry │
+│ • Returns: Structured JSON + Reasoning │
+│ • Confidence scoring + Web action triggers │
 └────────────────┬────────────────────────────────────┘
-                 │ Robot Commands
-                 ▼
+ │ Robot Commands
+ ▼
 ┌─────────────────────────────────────────────────────┐
-│      MUJOCO 3D SIMULATION (Digital Twin)            │
-│  • Real-time fleet visualization                    │
-│  • 60 FPS physics simulation                        │
-│  • Multi-robot coordination                         │
+│ MUJOCO 3D SIMULATION (Digital Twin) │
+│ • Real-time fleet visualization │
+│ • 60 FPS physics simulation │
+│ • Multi-robot coordination │
 └─────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 💼 Business Model
+## Business Model
 
 ### Target Customers
 - **Warehouse operators** (Amazon, DHL, FedEx scale)
@@ -263,37 +263,37 @@ curl -X POST http://localhost:3001/mission-web \
 
 ---
 
-## 🎯 Hackathon Alignment
+## Hackathon Alignment
 
-### Web Agents Hackathon Requirements ✅
+### Web Agents Hackathon Requirements 
 
 **Real Website Interaction:**
-- ✅ TinyFish scrapes warehouse dashboards
-- ✅ Updates maintenance systems
-- ✅ Monitors weather for flight safety
-- ✅ Two-way automation (read + write)
+- TinyFish scrapes warehouse dashboards
+- Updates maintenance systems
+- Monitors weather for flight safety
+- Two-way automation (read + write)
 
 **Business Scalability:**
-- ✅ Clear target market ($30B+ TAM)
-- ✅ SaaS revenue model ($99/robot/month)
-- ✅ Enterprise positioning
-- ✅ Production-ready architecture
+- Clear target market ($30B+ TAM)
+- SaaS revenue model ($99/robot/month)
+- Enterprise positioning
+- Production-ready architecture
 
 **Technical Excellence:**
-- ✅ Structured JSON outputs
-- ✅ Multi-API key rotation (no rate limits)
-- ✅ Explainable AI reasoning
-- ✅ Constraint-aware decisions
+- Structured JSON outputs
+- Multi-API key rotation (no rate limits)
+- Explainable AI reasoning
+- Constraint-aware decisions
 
 **Innovation:**
-- ✅ Only web agent with 3D digital twin
-- ✅ Multi-robot fleet coordination
-- ✅ Enterprise-grade prompts
-- ✅ Visual proof of decisions
+- Only web agent with 3D digital twin
+- Multi-robot fleet coordination
+- Enterprise-grade prompts
+- Visual proof of decisions
 
 ---
 
-## 📊 Key Differentiators
+## Key Differentiators
 
 | Feature | Typical Web Agent | SkyMind WebOps |
 |---------|------------------|----------------|
@@ -306,7 +306,7 @@ curl -X POST http://localhost:3001/mission-web \
 
 ---
 
-## 🏆 Why Judges Will Love This
+## Why Judges Will Love This
 
 1. **Visually Impressive** - 3D simulation makes decisions tangible
 2. **Real Web Automation** - TinyFish integration proves it's not just simulation
@@ -316,30 +316,30 @@ curl -X POST http://localhost:3001/mission-web \
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 SkyMind/
 ├── backend/
-│   ├── web-agent-server.js         # ⭐ TinyFish + Gemini backend
-│   └── package.json
+│ ├── web-agent-server.js # TinyFish + Gemini backend
+│ └── package.json
 │
 ├── mujoco_wasm/
-│   ├── examples/
-│   │   ├── main.js                 # 3D simulation
-│   │   ├── web-agent-integration.js # ⭐ TinyFish integration
-│   │   └── scenes/                 # Robot models
-│   └── index.html
+│ ├── examples/
+│ │ ├── main.js # 3D simulation
+│ │ ├── web-agent-integration.js # TinyFish integration
+│ │ └── scenes/ # Robot models
+│ └── index.html
 │
 ├── docs/
-│   └── WEB_AGENTS_SUBMISSION.md    # This file
+│ └── WEB_AGENTS_SUBMISSION.md # This file
 │
 └── README.md
 ```
 
 ---
 
-## 🚀 Live Demo
+## Live Demo
 
 **Try it now:** https://sky-mind-nine.vercel.app/
 
@@ -352,16 +352,16 @@ SkyMind/
 
 ---
 
-## 📞 Links
+## Links
 
-- **🌐 Live Demo:** https://sky-mind-nine.vercel.app/
+- ** Live Demo:** https://sky-mind-nine.vercel.app/
 - **💻 GitHub:** https://github.com/Tasfia-17/SkyMind
-- **🤖 TinyFish:** https://tinyfish.ai
-- **🏆 Hackathon:** https://lu.ma/webagentshack
+- ** TinyFish:** https://tinyfish.ai
+- ** Hackathon:** https://lu.ma/webagentshack
 
 ---
 
-## 🎬 Submission Checklist
+## Submission Checklist
 
 - [x] TinyFish API integration
 - [x] Real website automation (scrape + update)
@@ -378,4 +378,4 @@ SkyMind/
 
 **Built with ❤️ for autonomous web operations and AI innovation**
 
-🌐 **SkyMind WebOps** - Where physical robots meet digital automation
+ **SkyMind WebOps** - Where physical robots meet digital automation
