@@ -1,4 +1,4 @@
-// SkyMind AI Integration - Multi-API Key Version
+// RoboScout Integration - Multi-API Key Version
 // Add this to your main.js
 
 // Multiple API Keys (rotates to avoid rate limits)

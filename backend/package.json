@@ -2,7 +2,7 @@
   "name": "skymind-backend",
   "version": "1.0.0",
   "type": "module",
-  "description": "SkyMind AI Fleet Orchestrator - Vultr Backend",
+  "description": "RoboScout Fleet Orchestrator - Vultr Backend",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

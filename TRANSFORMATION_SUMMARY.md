@@ -1,8 +1,8 @@
-# 🎯 TRANSFORMATION COMPLETE: SkyMind → SkyMind WebOps
+# 🎯 TRANSFORMATION COMPLETE: RoboScout → RoboScout
 
 ## ✅ What Was Done
 
-Your SkyMind project has been successfully repositioned for the **Web Agents Hackathon** while keeping all your existing AI and 3D visualization intact.
+Your RoboScout project has been successfully repositioned for the **Web Agents Hackathon** while keeping all your existing AI and 3D visualization intact.
 
 ---
 
@@ -71,7 +71,7 @@ Your current live demo still works:
 
 ### Option 2: Local with Web Agent Backend
 ```bash
-cd SkyMind
+cd RoboScout
 ./setup-web-agent.sh
 
 # Terminal 1: Backend
@@ -86,7 +86,7 @@ cd mujoco_wasm && python -m http.server 8000
 
 ### Option 3: Test TinyFish Only
 ```bash
-cd SkyMind/mujoco_wasm/examples
+cd RoboScout/mujoco_wasm/examples
 node tinyfish-examples.js
 ```
 
@@ -138,7 +138,7 @@ node tinyfish-examples.js
 - [ ] Submit form: https://forms.gle/VdDDP1fADVLiWE5MA
 
 ### Submission Form Data:
-**Project Name:** SkyMind WebOps - Autonomous Robotics Fleet Web Agent
+**Project Name:** RoboScout - Autonomous Robotics Fleet Web Agent
 
 **Description:**
 AI web agent that autonomously manages robotics fleets by interacting with enterprise dashboards, logistics systems, and operational tools in real-time. Uses TinyFish for web automation + Gemini AI for decisions + 3D digital twin for visualization.
@@ -147,7 +147,7 @@ AI web agent that autonomously manages robotics fleets by interacting with enter
 
 **Links:**
 - Demo: https://sky-mind-nine.vercel.app/
-- GitHub: https://github.com/Tasfia-17/SkyMind
+- GitHub: https://github.com/Tasfia-17/RoboScout
 
 **Tags:** TinyFish, Web Agents, Robotics, Fleet Management, AI Automation
 
@@ -155,7 +155,7 @@ AI web agent that autonomously manages robotics fleets by interacting with enter
 
 ## 🎤 30-Second Pitch
 
-"SkyMind WebOps is an AI web agent that bridges physical robotics and digital operations.
+"RoboScout is an AI web agent that bridges physical robotics and digital operations.
 
 It uses TinyFish to scrape warehouse dashboards, weather sites, and maintenance systems. Gemini AI analyzes this web data plus robot telemetry to make autonomous decisions. Then it updates dashboards and coordinates the fleet.
 
@@ -200,7 +200,7 @@ We're the only web agent with 3D visualization and two-way automation."
                │ TinyFish API
                ▼
 ┌─────────────────────────────────────┐
-│   SkyMind WebOps Backend (Vultr)    │
+│   RoboScout Backend (Vultr)    │
 │   • TinyFish Integration            │
 │   • Multi-Key Rotation (3 Gemini)   │
 │   • Fleet Coordination              │

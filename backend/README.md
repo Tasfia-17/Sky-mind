@@ -1,6 +1,6 @@
-# SkyMind AI Backend
+# RoboScout Backend
 
-AI-powered autonomous drone fleet orchestration backend for the SkyMind platform.
+AI-powered autonomous drone fleet orchestration backend for the RoboScout platform.
 
 ## 🚀 Quick Deploy to Vultr
 
@@ -35,8 +35,8 @@ node --version  # Should show v20.x
 **Deploy the backend:**
 ```bash
 # Clone your repo
-git clone https://github.com/Tasfia-17/SkyMind.git
-cd SkyMind
+git clone https://github.com/Tasfia-17/RoboScout.git
+cd RoboScout
 
 # Create backend directory
 mkdir -p backend
@@ -80,7 +80,7 @@ ufw enable
 curl http://YOUR_VULTR_IP:3000/health
 
 # Should return:
-# {"status":"ok","service":"SkyMind AI Backend"}
+# {"status":"ok","service":"RoboScout Backend"}
 ```
 
 ## 📡 API Endpoints
@@ -183,4 +183,4 @@ Browser (Execute Command)
 
 ## 📝 License
 
-MIT License - Part of SkyMind AI Fleet Orchestrator
+MIT License - Part of RoboScout Fleet Orchestrator

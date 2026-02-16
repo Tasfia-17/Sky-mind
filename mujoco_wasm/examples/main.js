@@ -84,7 +84,7 @@ function updateAIDisplay() {
   if (display) {
     display.innerHTML = `
       <div style="background: rgba(0,0,0,0.8); color: #0f0; padding: 15px; border-radius: 8px; font-family: monospace; font-size: 12px; max-width: 400px;">
-        <div style="font-size: 14px; font-weight: bold; margin-bottom: 10px; color: #00ff00;">🤖 SkyMind AI - Autonomous Control</div>
+        <div style="font-size: 14px; font-weight: bold; margin-bottom: 10px; color: #00ff00;">🤖 RoboScout - Autonomous Control</div>
         <div><strong>Decisions:</strong> ${aiDecisionCount}</div>
         <div><strong>Action:</strong> <span style="color: #00ffff;">${lastAIAction}</span></div>
         <div><strong>Target:</strong> (${aiTarget.x.toFixed(1)}, ${aiTarget.y.toFixed(1)}, ${aiTarget.z.toFixed(1)})</div>

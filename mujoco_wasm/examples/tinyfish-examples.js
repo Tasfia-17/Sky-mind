@@ -1,4 +1,4 @@
-// DEMO: TinyFish Web Automation Examples for SkyMind WebOps
+// DEMO: TinyFish Web Automation Examples for RoboScout
 // Copy these into your main.js or run separately to test
 
 const TINYFISH_API_KEY = "sk-tinyfish-GNc7SJkKci7lviX152z59peTF8zC3-WO";
@@ -150,7 +150,7 @@ async function webAwareDecisionLoop(robotState) {
   const weather = await checkFlightWeather();
   
   // Step 2: Send to Gemini AI
-  const prompt = `You are SkyMind WebOps AI.
+  const prompt = `You are RoboScout AI.
 
 Robot State:
 ${JSON.stringify(robotState, null, 2)}

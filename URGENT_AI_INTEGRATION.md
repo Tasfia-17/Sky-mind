@@ -210,7 +210,7 @@ async function getAIDecision(pos, battery) {
 
 1. Post video on X/Twitter with:
    ```
-   Just built SkyMind AI - autonomous drone fleet powered by @GoogleDeepMind Gemini 3 Flash! 
+   Just built RoboScout - autonomous drone fleet powered by @GoogleDeepMind Gemini 3 Flash! 
    
    🤖 AI makes real-time decisions
    ☁️ Deployed on @Vultr

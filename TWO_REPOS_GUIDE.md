@@ -1,7 +1,7 @@
 # Two Repos - Two Hackathons
 
-## REPO 1: SkyMind (Robotics)
-**URL**: https://github.com/Tasfia-17/SkyMind
+## REPO 1: RoboScout (Robotics)
+**URL**: https://github.com/Tasfia-17/RoboScout
 
 **Hackathon**: lablab.ai AI Meets Robotics  
 **Submit**: https://lablab.ai/event/launch-fund-ai-meets-robotics
@@ -26,7 +26,7 @@
 
 ## Key Differences
 
-| Feature | SkyMind (Robotics) | Sky-mind (Web Agents) |
+| Feature | RoboScout (Robotics) | Sky-mind (Web Agents) |
 |---------|-------------------|----------------------|
 | **Hackathon** | lablab.ai | Web Agents |
 | **Focus** | Robot control | Web automation |

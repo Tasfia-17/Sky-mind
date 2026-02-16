@@ -21,7 +21,7 @@
 ### Option 2: Vercel CLI
 
 ```bash
-cd SkyMind
+cd RoboScout
 npm install -g vercel
 vercel login
 vercel --prod
@@ -81,7 +81,7 @@ After deployment:
 2. Press **F12** (open console)
 3. Look for:
    ```
-   SkyMind WebOps Agent initialized
+   RoboScout Agent initialized
    TinyFish integration: ACTIVE
    ```
 4. Wait 2 seconds for AI decisions to appear

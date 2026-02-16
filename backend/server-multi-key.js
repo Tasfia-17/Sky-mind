@@ -14,7 +14,7 @@ const GEMINI_KEYS = [
 let keyIndex = 0;
 
 app.get('/health', (req, res) => {
-  res.json({ status: 'ok', service: 'SkyMind AI', keys: GEMINI_KEYS.length });
+  res.json({ status: 'ok', service: 'RoboScout', keys: GEMINI_KEYS.length });
 });
 
 app.post('/mission', async (req, res) => {
@@ -71,7 +71,7 @@ app.post('/telemetry', (req, res) => {
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log(`🚁 SkyMind AI Backend running on port ${PORT}`);
+  console.log(`🚁 RoboScout Backend running on port ${PORT}`);
   console.log(`📡 Using ${GEMINI_KEYS.length} API keys`);
   console.log(`🔗 Test: curl http://localhost:${PORT}/health`);
 });

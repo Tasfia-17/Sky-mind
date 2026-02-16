@@ -1,4 +1,4 @@
-// SkyMind WebOps - TinyFish Integration Layer
+// RoboScout - TinyFish Integration Layer
 // Add this to main.js for Web Agents Hackathon
 
 const TINYFISH_API_KEY = "sk-tinyfish-GNc7SJkKci7lviX152z59peTF8zC3-WO";
@@ -86,7 +86,7 @@ async function getWebAwareAIDecision(pos, battery, vel) {
   currentKeyIndex = (currentKeyIndex + 1) % GEMINI_API_KEYS.length;
   
   try {
-    const prompt = `You are SkyMind WebOps, an autonomous fleet operations AI.
+    const prompt = `You are RoboScout, an autonomous fleet operations AI.
 
 Robot State:
 - Position: (${pos.x.toFixed(1)}, ${pos.y.toFixed(1)}, ${pos.z.toFixed(1)})
@@ -163,7 +163,7 @@ function updateWebAwareDisplay(decision) {
   if (display) {
     display.innerHTML = `
       <div style="background: rgba(0,0,0,0.9); color: #0f0; padding: 15px; border-radius: 8px; font-family: monospace; font-size: 12px; max-width: 450px;">
-        <div style="font-size: 14px; font-weight: bold; margin-bottom: 10px; color: #00ff00;">🌐 SkyMind WebOps Agent</div>
+        <div style="font-size: 14px; font-weight: bold; margin-bottom: 10px; color: #00ff00;">🌐 RoboScout Agent</div>
         <div style="color: #00ffff; margin-bottom: 8px;">━━━ AI DECISIONS ━━━</div>
         <div><strong>Decisions:</strong> ${aiDecisionCount}</div>
         <div><strong>Action:</strong> <span style="color: #00ffff;">${lastAIAction}</span></div>
@@ -186,7 +186,7 @@ function updateWebAwareDisplay(decision) {
 
 // Initialize web agent on page load
 window.addEventListener('load', () => {
-  console.log('🌐 SkyMind WebOps Agent initialized');
+  console.log('🌐 RoboScout Agent initialized');
   console.log('🤖 TinyFish integration: ACTIVE');
   
   // Fetch web data every 30 seconds

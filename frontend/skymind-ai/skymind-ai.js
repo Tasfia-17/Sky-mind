@@ -1,7 +1,7 @@
-// SkyMind AI Integration Module
+// RoboScout Integration Module
 // Add this to your main.js
 
-class SkyMindAI {
+class RoboScoutAI {
   constructor(backendURL) {
     this.backendURL = backendURL;
     this.droneId = 'drone_1';
@@ -89,4 +89,4 @@ class SkyMindAI {
 }
 
 // Export for use in main.js
-export { SkyMindAI };
+export { RoboScoutAI };

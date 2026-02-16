@@ -1,4 +1,4 @@
-#  SkyMind AI - Autonomous Multi-Robot Fleet Orchestrator
+#  RoboScout - Autonomous Multi-Robot Fleet Orchestrator
 
 > **AI-powered robotics fleet with Gemini 3 Flash making real-time autonomous decisions**  
 > Built for [lablab.ai AI Meets Robotics Hackathon](https://lablab.ai/event/launch-fund-ai-meets-robotics)
@@ -27,7 +27,7 @@ Modern warehouse, logistics, and industrial operations need intelligent robotics
 
 ##  Our Solution
 
-**SkyMind AI** is a simulation-first, multi-robot orchestration platform powered by **Google Gemini 3 Flash** that provides:
+**RoboScout** is a simulation-first, multi-robot orchestration platform powered by **Google Gemini 3 Flash** that provides:
 
 ### Core Innovation
 - **🤖 Real AI Autonomy** - Gemini 3 Flash makes decisions every 2 seconds based on robot state
@@ -46,7 +46,7 @@ Modern warehouse, logistics, and industrial operations need intelligent robotics
 
 ##  Supported Robot Types
 
-SkyMind AI provides a comprehensive robotics simulation platform with **7 robot categories** and **15+ robot models**:
+RoboScout provides a comprehensive robotics simulation platform with **7 robot categories** and **15+ robot models**:
 
 ### 1. 🚁 Aerial Robots (Drones)
 **Skydio X2 Quadcopter**
@@ -222,8 +222,8 @@ SkyMind AI provides a comprehensive robotics simulation platform with **7 robot 
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/Tasfia-17/SkyMind.git
-cd SkyMind
+git clone https://github.com/Tasfia-17/RoboScout.git
+cd RoboScout
 ```
 
 ### 2. Get Gemini API Keys (FREE)
@@ -443,7 +443,7 @@ curl http://YOUR_VULTR_IP:3000/health
 ## 📁 Project Structure
 
 ```
-SkyMind/
+RoboScout/
 ├── mujoco_wasm/                    # MuJoCo simulation
 │   ├── examples/
 │   │   ├── main.js                 # Main simulation with AI integration
@@ -546,7 +546,7 @@ MIT License - See [LICENSE](LICENSE) for details.
 ## 📞 Links
 
 - **🌐 Live Demo:** https://sky-mind-nine.vercel.app/
-- **💻 GitHub:** https://github.com/Tasfia-17/SkyMind
+- **💻 GitHub:** https://github.com/Tasfia-17/RoboScout
 - **🏆 Hackathon:** https://lablab.ai/event/launch-fund-ai-meets-robotics
 - **🤖 Gemini AI:** https://ai.google.dev/
 - **☁️ Vultr Cloud:** https://www.vultr.com/
@@ -562,4 +562,4 @@ Built by [@Tasfia-17](https://github.com/Tasfia-17)
 
 
 
- **SkyMind AI** - Making multi-robot fleets intelligent, transparent, and scalable
+ **RoboScout** - Making multi-robot fleets intelligent, transparent, and scalable

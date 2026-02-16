@@ -1,10 +1,10 @@
-# 🚀 SkyMind AI - Quick Start (5 Minutes)
+# 🚀 RoboScout - Quick Start (5 Minutes)
 
 ## ⚡ Fastest Path to Submission
 
 ### Step 1: Test Locally (2 minutes)
 ```bash
-cd SkyMind
+cd RoboScout
 ./deploy-local.sh
 ```
 
@@ -34,7 +34,7 @@ vercel --prod
 Copy this template and post on X/Twitter:
 
 ```
-🚁 Just submitted SkyMind AI to @lablabai AI Meets Robotics Hackathon!
+🚁 Just submitted RoboScout to @lablabai AI Meets Robotics Hackathon!
 
 🤖 Gemini 3 Flash makes autonomous decisions every 2 seconds
 🧠 Explainable AI - see reasoning for every action
@@ -44,7 +44,7 @@ Copy this template and post on X/Twitter:
 Built for @Surgexyz_ funding opportunity
 
 🎮 Try it: https://sky-mind-nine.vercel.app/
-💻 Code: https://github.com/Tasfia-17/SkyMind
+💻 Code: https://github.com/Tasfia-17/RoboScout
 
 #AIRobotics #AutonomousDrones #GeminiAI
 ```
@@ -58,9 +58,9 @@ Built for @Surgexyz_ funding opportunity
 Go to: https://lablab.ai/event/launch-fund-ai-meets-robotics
 
 Fill in:
-- **Project Title:** SkyMind AI - Autonomous Drone Fleet Orchestrator
+- **Project Title:** RoboScout - Autonomous Drone Fleet Orchestrator
 - **Short Description:** AI-powered drone fleet with Gemini 3 Flash making real-time autonomous decisions
-- **GitHub:** https://github.com/Tasfia-17/SkyMind
+- **GitHub:** https://github.com/Tasfia-17/RoboScout
 - **Demo URL:** https://sky-mind-nine.vercel.app/
 - **X Post URL:** [PASTE YOUR TWEET URL HERE]
 - **Tags:** Gemini AI, Vultr, MuJoCo, Autonomous Robotics

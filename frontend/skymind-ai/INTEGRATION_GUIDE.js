@@ -6,17 +6,17 @@ STEP 1: Add this import at the top of main.js
 ===========================================
 */
 
-import { SkyMindAI } from './skymind-ai.js';
+import { RoboScoutAI } from './skymind-ai.js';
 
 /*
 ===========================================
-STEP 2: Initialize SkyMind AI after loading MuJoCo
+STEP 2: Initialize RoboScout after loading MuJoCo
 ===========================================
 */
 
 // Replace YOUR_VULTR_IP with your actual Vultr server IP
 const BACKEND_URL = 'http://YOUR_VULTR_IP:3000';
-const skyMindAI = new SkyMindAI(BACKEND_URL);
+const skyMindAI = new RoboScoutAI(BACKEND_URL);
 window.skyMindAI = skyMindAI; // Make it globally accessible
 
 /*
@@ -54,8 +54,8 @@ async function updateDroneWithAI(simulation, droneBodyId) {
     await skyMindAI.sendTelemetry(pos, batteryLevel);
     
     // Update dashboard
-    if (window.updateSkyMindDashboard) {
-      window.updateSkyMindDashboard({
+    if (window.updateRoboScoutDashboard) {
+      window.updateRoboScoutDashboard({
         position: { x: pos[0], y: pos[1], z: pos[2] },
         battery: batteryLevel
       });
@@ -74,8 +74,8 @@ async function updateDroneWithAI(simulation, droneBodyId) {
     currentAITarget = decision.target;
     
     // Update dashboard with AI decision
-    if (window.updateSkyMindDashboard) {
-      window.updateSkyMindDashboard({
+    if (window.updateRoboScoutDashboard) {
+      window.updateRoboScoutDashboard({
         decision: decision,
         logMessage: `AI: ${decision.action} - ${decision.reasoning}`
       });

@@ -1,4 +1,4 @@
-# ✅ SkyMind AI - DEPLOYMENT READY
+# ✅ RoboScout - DEPLOYMENT READY
 
 ## 🎉 Your Project is Submission-Ready!
 
@@ -32,7 +32,7 @@ All changes have been made to make your project winning-worthy. Here's what was 
 
 **User Interface:**
 - Before: Generic MuJoCo demo
-- After: Branded SkyMind AI with technology stack display
+- After: Branded RoboScout with technology stack display
 
 **Documentation:**
 - Before: Generic README with placeholders
@@ -61,7 +61,7 @@ git push origin main
 
 ### 3. Create X Post
 ```
-🚁 Just submitted SkyMind AI to @lablabai AI Meets Robotics Hackathon!
+🚁 Just submitted RoboScout to @lablabai AI Meets Robotics Hackathon!
 
 🤖 Gemini 3 Flash makes autonomous decisions every 2 seconds
 🧠 Explainable AI - see reasoning for every action
@@ -70,7 +70,7 @@ git push origin main
 Built for @Surgexyz_ funding opportunity
 
 🎮 https://sky-mind-nine.vercel.app/
-💻 https://github.com/Tasfia-17/SkyMind
+💻 https://github.com/Tasfia-17/RoboScout
 
 #AIRobotics #AutonomousDrones
 ```
@@ -126,7 +126,7 @@ Based on hackathon criteria:
 ## 📞 Quick Links
 
 - **Live Demo:** https://sky-mind-nine.vercel.app/
-- **GitHub:** https://github.com/Tasfia-17/SkyMind
+- **GitHub:** https://github.com/Tasfia-17/RoboScout
 - **Hackathon:** https://lablab.ai/event/launch-fund-ai-meets-robotics
 
 ---

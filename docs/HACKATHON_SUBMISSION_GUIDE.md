@@ -1,4 +1,4 @@
-# 🚀 SkyMind AI - Complete Hackathon Submission Guide
+# 🚀 RoboScout - Complete Hackathon Submission Guide
 
 ## ⏰ Timeline: 5 Days to Submission (Feb 15)
 
@@ -98,8 +98,8 @@ cd /var/www/skymind-backend
 
 # Copy files (you'll need to upload them)
 # Option 1: Use git (recommended)
-git clone https://github.com/YOUR_USERNAME/SkyMind.git
-cd SkyMind/backend
+git clone https://github.com/YOUR_USERNAME/RoboScout.git
+cd RoboScout/backend
 
 # Option 2: Manual upload using scp from your local machine
 # scp -r ~/skymind-backend/* root@YOUR_VULTR_IP:/var/www/skymind-backend/
@@ -154,7 +154,7 @@ ufw status
 curl http://YOUR_VULTR_IP:3000/health
 
 # Should return:
-# {"status":"ok","service":"SkyMind AI Backend"}
+# {"status":"ok","service":"RoboScout Backend"}
 ```
 
 ✅ **Backend is now live!**
@@ -180,7 +180,7 @@ cp ~/skymind-frontend/INTEGRATION_GUIDE.js mujoco_wasm/examples/skymind/
 
 Add this right before `</body>`:
 ```html
-<!-- SkyMind AI Dashboard -->
+<!-- RoboScout Dashboard -->
 <iframe 
   src="examples/skymind/dashboard.html" 
   style="position:fixed;top:0;right:0;width:340px;height:100vh;border:none;z-index:9999;"
@@ -192,10 +192,10 @@ Add this right before `</body>`:
 
 At the top, add:
 ```javascript
-import { SkyMindAI } from './skymind/skymind-ai.js';
+import { RoboScoutAI } from './skymind/skymind-ai.js';
 
 // Initialize (replace with your Vultr IP)
-const skyMindAI = new SkyMindAI('http://YOUR_VULTR_IP:3000');
+const skyMindAI = new RoboScoutAI('http://YOUR_VULTR_IP:3000');
 window.skyMindAI = skyMindAI;
 ```
 
@@ -213,8 +213,8 @@ async function updateWithAI() {
     await skyMindAI.sendTelemetry(dronePos, batteryLevel);
     
     // Update dashboard
-    if (window.updateSkyMindDashboard) {
-      window.updateSkyMindDashboard({
+    if (window.updateRoboScoutDashboard) {
+      window.updateRoboScoutDashboard({
         position: { x: dronePos[0], y: dronePos[1], z: dronePos[2] },
         battery: batteryLevel
       });
@@ -226,8 +226,8 @@ async function updateWithAI() {
       dronePos, batteryLevel, [0, 0, 0], []
     );
     
-    if (window.updateSkyMindDashboard) {
-      window.updateSkyMindDashboard({
+    if (window.updateRoboScoutDashboard) {
+      window.updateRoboScoutDashboard({
         decision: decision,
         logMessage: `${decision.action}: ${decision.reasoning}`
       });
@@ -264,7 +264,7 @@ vercel --prod
 ### 4️⃣ Create Demo Video (1 hour)
 
 **What to Show:**
-1. **Opening (10 sec):** "SkyMind AI - Autonomous Drone Fleet Orchestrator"
+1. **Opening (10 sec):** "RoboScout - Autonomous Drone Fleet Orchestrator"
 2. **Problem (15 sec):** "Warehouse drone fleets need intelligent coordination"
 3. **Solution (20 sec):** Show your dashboard + simulation running
 4. **AI in Action (30 sec):** 
@@ -290,7 +290,7 @@ vercel --prod
 
 **Template:**
 ```
-🚁 Just built SkyMind AI for @lablabai @Surgexyz_ AI Meets Robotics Hackathon!
+🚁 Just built RoboScout for @lablabai @Surgexyz_ AI Meets Robotics Hackathon!
 
 AI-powered autonomous drone fleet orchestrator:
 ✅ Google Gemini for mission planning
@@ -299,7 +299,7 @@ AI-powered autonomous drone fleet orchestrator:
 ✅ Live AI decision dashboard
 
 🎥 Demo: [YOUR_YOUTUBE_LINK]
-💻 Code: https://github.com/Tasfia-17/SkyMind
+💻 Code: https://github.com/Tasfia-17/RoboScout
 🌐 Live: [YOUR_VERCEL_URL]
 
 #AIRobotics #LabLabAI #SurgeXYZ #Gemini #Vultr
@@ -320,12 +320,12 @@ AI-powered autonomous drone fleet orchestrator:
 **Go to:** https://lablab.ai/event/launch-fund-ai-meets-robotics
 
 **Fill out:**
-- **Project Title:** SkyMind AI - Autonomous Drone Fleet Orchestrator
+- **Project Title:** RoboScout - Autonomous Drone Fleet Orchestrator
 - **Short Description:** AI-powered drone fleet coordination platform using Gemini for mission planning, Vultr for backend orchestration, and MuJoCo for digital twin simulation.
 - **Long Description:** (See template below)
 - **Cover Image:** Screenshot of your dashboard + simulation
 - **Video Presentation:** Your YouTube link
-- **GitHub Repository:** https://github.com/Tasfia-17/SkyMind
+- **GitHub Repository:** https://github.com/Tasfia-17/RoboScout
 - **Demo URL:** Your Vercel URL
 - **X Post Link:** YOUR TWEET URL (MANDATORY)
 - **Technologies:** Gemini AI, Vultr, MuJoCo, WebAssembly, Node.js
@@ -333,13 +333,13 @@ AI-powered autonomous drone fleet orchestrator:
 
 **Long Description Template:**
 ```
-SkyMind AI is an autonomous drone fleet orchestration platform designed for warehouse operations. It combines Google Gemini's reasoning capabilities with Vultr's cloud infrastructure and MuJoCo's physics simulation to create an intelligent, scalable robotics coordination system.
+RoboScout is an autonomous drone fleet orchestration platform designed for warehouse operations. It combines Google Gemini's reasoning capabilities with Vultr's cloud infrastructure and MuJoCo's physics simulation to create an intelligent, scalable robotics coordination system.
 
 PROBLEM:
 Modern warehouses are deploying drone fleets for inventory inspection, but coordinating multiple autonomous agents requires centralized AI decision-making that adapts to real-time conditions.
 
 SOLUTION:
-SkyMind AI provides:
+RoboScout provides:
 - Gemini-powered mission planning with natural language reasoning
 - Vultr backend as the central coordination layer
 - Real-time MuJoCo digital twin for validation
@@ -359,7 +359,7 @@ TECHNICAL STACK:
 - Simulation: MuJoCo physics engine with PID control
 
 INNOVATION:
-Unlike traditional hard-coded robotics systems, SkyMind uses Gemini's reasoning to make context-aware decisions. The AI can explain its choices ("Rerouting due to low battery"), making the system transparent and debuggable.
+Unlike traditional hard-coded robotics systems, RoboScout uses Gemini's reasoning to make context-aware decisions. The AI can explain its choices ("Rerouting due to low battery"), making the system transparent and debuggable.
 
 BUSINESS VALUE:
 Warehouse operators can deploy this as a SaaS platform to:

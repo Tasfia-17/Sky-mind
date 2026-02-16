@@ -1,4 +1,4 @@
-# 🌐 SkyMind WebOps - Autonomous Robotics Fleet Web Agent
+# 🌐 RoboScout - Autonomous Robotics Fleet Web Agent
 
 > **AI-powered web agent that autonomously manages robotics fleets by interacting with enterprise dashboards, logistics systems, and operational tools in real-time**  
 > Built for [Web Agents Hackathon](https://lu.ma/webagentshack) by TinyFish + r/AI_Agents
@@ -25,7 +25,7 @@ Modern warehouse and logistics operations need AI agents that can:
 
 ## 💡 Our Solution
 
-**SkyMind WebOps** is an autonomous web agent that bridges the gap between physical robotics and digital operations by:
+**RoboScout** is an autonomous web agent that bridges the gap between physical robotics and digital operations by:
 
 ### Core Innovation
 - **🌐 Real Website Automation** - TinyFish API scrapes dashboards, updates systems, monitors platforms
@@ -110,7 +110,7 @@ Returns: Market intelligence → Business strategy
 
 ### System Prompt (Enterprise-Grade)
 ```
-You are SkyMind WebOps, an autonomous fleet operations AI.
+You are RoboScout, an autonomous fleet operations AI.
 
 Decision priorities:
 1. Safety (collision risk, low battery, system fault)
@@ -151,14 +151,14 @@ Output format: Structured JSON only
 
 ### 1. Run Web Agent Backend
 ```bash
-cd SkyMind/backend
+cd RoboScout/backend
 npm install
 node web-agent-server.js
 ```
 
 ### 2. Run 3D Simulation
 ```bash
-cd SkyMind/mujoco_wasm
+cd RoboScout/mujoco_wasm
 python -m http.server 8000
 ```
 
@@ -295,7 +295,7 @@ curl -X POST http://localhost:3001/mission-web \
 
 ## 📊 Key Differentiators
 
-| Feature | Typical Web Agent | SkyMind WebOps |
+| Feature | Typical Web Agent | RoboScout |
 |---------|------------------|----------------|
 | **Scope** | Single website scraper | Multi-platform orchestrator |
 | **Direction** | One-way (scrape only) | Two-way (scrape + update) |
@@ -319,7 +319,7 @@ curl -X POST http://localhost:3001/mission-web \
 ## 📁 Project Structure
 
 ```
-SkyMind/
+RoboScout/
 ├── backend/
 │   ├── web-agent-server.js         # ⭐ TinyFish + Gemini backend
 │   └── package.json
@@ -355,7 +355,7 @@ SkyMind/
 ## 📞 Links
 
 - **🌐 Live Demo:** https://sky-mind-nine.vercel.app/
-- **💻 GitHub:** https://github.com/Tasfia-17/SkyMind
+- **💻 GitHub:** https://github.com/Tasfia-17/RoboScout
 - **🤖 TinyFish:** https://tinyfish.ai
 - **🏆 Hackathon:** https://lu.ma/webagentshack
 
@@ -378,4 +378,4 @@ SkyMind/
 
 **Built with ❤️ for autonomous web operations and AI innovation**
 
-🌐 **SkyMind WebOps** - Where physical robots meet digital automation
+🌐 **RoboScout** - Where physical robots meet digital automation

@@ -41,7 +41,7 @@ app.use(express.json());
 
 // Health check
 app.get('/health', (req, res) => {
-  res.json({ status: 'ok', service: 'SkyMind AI Backend' });
+  res.json({ status: 'ok', service: 'RoboScout Backend' });
 });
 
 // Receive telemetry
@@ -150,6 +150,6 @@ app.get('/stats', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`🚁 SkyMind AI Backend running on port ${PORT}`);
+  console.log(`🚁 RoboScout Backend running on port ${PORT}`);
   console.log(`📊 Dashboard: http://localhost:${PORT}/stats`);
 });

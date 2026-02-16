@@ -62,7 +62,7 @@ app.post('/mission-web', async (req, res) => {
   keyIndex = (keyIndex + 1) % GEMINI_KEYS.length;
   
   try {
-    const prompt = `You are SkyMind WebOps, an autonomous fleet operations AI.
+    const prompt = `You are RoboScout, an autonomous fleet operations AI.
 
 Robot State:
 - Position: (${position?.x || 0}, ${position?.y || 0}, ${position?.z || 0})
@@ -118,7 +118,7 @@ Respond JSON only:
 app.get('/health', (req, res) => {
   res.json({ 
     status: 'ok', 
-    service: 'SkyMind WebOps Agent',
+    service: 'RoboScout Agent',
     tinyfish: 'enabled',
     gemini_keys: GEMINI_KEYS.length 
   });
@@ -126,7 +126,7 @@ app.get('/health', (req, res) => {
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
-  console.log(`🌐 SkyMind WebOps Agent running on port ${PORT}`);
+  console.log(`🌐 RoboScout Agent running on port ${PORT}`);
   console.log(`🤖 TinyFish integration: ACTIVE`);
   console.log(`📡 Gemini keys: ${GEMINI_KEYS.length}`);
 });

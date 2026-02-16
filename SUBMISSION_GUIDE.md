@@ -1,17 +1,17 @@
-# 🏆 SkyMind AI - Hackathon Submission Checklist
+# 🏆 RoboScout - Hackathon Submission Checklist
 
 ## ✅ Submission Requirements
 
 ### 1. Project Submission on lablab.ai
 
 **Required Information:**
-- ✅ Project Title: **SkyMind AI - Autonomous Drone Fleet Orchestrator**
+- ✅ Project Title: **RoboScout - Autonomous Drone Fleet Orchestrator**
 - ✅ Short Description: AI-powered drone fleet with Gemini 3 Flash making real-time autonomous decisions
 - ✅ Technology Tags: Gemini AI, Vultr, MuJoCo, Autonomous Robotics
 - ✅ Category: Track 1 - Autonomous Robotics Control in Simulation
 
 **Links:**
-- ✅ GitHub Repository: https://github.com/Tasfia-17/SkyMind
+- ✅ GitHub Repository: https://github.com/Tasfia-17/RoboScout
 - ✅ Live Demo: https://sky-mind-nine.vercel.app/
 - ✅ Slide Presentation: [Upload to Google Slides/PDF]
 
@@ -23,7 +23,7 @@
 
 **Template:**
 ```
-🚁 Just submitted SkyMind AI to @lablabai AI Meets Robotics Hackathon!
+🚁 Just submitted RoboScout to @lablabai AI Meets Robotics Hackathon!
 
 🤖 Gemini 3 Flash makes autonomous decisions every 2 seconds
 🧠 Explainable AI - see reasoning for every action
@@ -33,7 +33,7 @@
 Built for @Surgexyz_ funding opportunity
 
 🎮 Try it: https://sky-mind-nine.vercel.app/
-💻 Code: https://github.com/Tasfia-17/SkyMind
+💻 Code: https://github.com/Tasfia-17/RoboScout
 
 #AIRobotics #AutonomousDrones #GeminiAI
 ```
@@ -231,7 +231,7 @@ currentKeyIndex = (currentKeyIndex + 1) % 3;
 ## 📞 Contact & Links
 
 - **Live Demo**: https://sky-mind-nine.vercel.app/
-- **GitHub**: https://github.com/Tasfia-17/SkyMind
+- **GitHub**: https://github.com/Tasfia-17/RoboScout
 - **Team**: [@Tasfia-17](https://github.com/Tasfia-17)
 - **Hackathon**: https://lablab.ai/event/launch-fund-ai-meets-robotics
 
@@ -254,4 +254,4 @@ Before submitting:
 
 **Built with ❤️ for autonomous robotics and AI innovation**
 
-🚁 **SkyMind AI** - Making drone fleets intelligent, transparent, and scalable
+🚁 **RoboScout** - Making drone fleets intelligent, transparent, and scalable

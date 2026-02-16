@@ -35,7 +35,7 @@
 
 ## 🌐 Core Value Proposition
 
-**SkyMind WebOps** is an AI web agent that autonomously manages robotics fleets by:
+**RoboScout** is an AI web agent that autonomously manages robotics fleets by:
 1. **Scraping** warehouse dashboards, weather sites, maintenance systems (TinyFish)
 2. **Analyzing** web data + robot telemetry (Gemini AI)
 3. **Deciding** optimal actions with explainable reasoning
@@ -57,7 +57,7 @@
 
 ### Option 2: Local Setup
 ```bash
-cd SkyMind
+cd RoboScout
 ./setup-web-agent.sh
 
 # Terminal 1
@@ -74,7 +74,7 @@ cd mujoco_wasm && python -m http.server 8000
 ## 📊 Key Differentiators
 
 ### vs. Typical Web Agents
-| Feature | Typical | SkyMind WebOps |
+| Feature | Typical | RoboScout |
 |---------|---------|----------------|
 | Scope | Single site scraper | Multi-platform orchestrator |
 | Direction | One-way (scrape) | Two-way (scrape + update) |
@@ -98,11 +98,11 @@ cd mujoco_wasm && python -m http.server 8000
 - [x] **Real Website Automation** - Scrapes dashboards, updates systems
 - [x] **Business Model** - SaaS pricing, target market, ROI
 - [x] **Live Demo** - https://sky-mind-nine.vercel.app/
-- [x] **GitHub Repo** - https://github.com/Tasfia-17/SkyMind
+- [x] **GitHub Repo** - https://github.com/Tasfia-17/RoboScout
 - [x] **Documentation** - `WEB_AGENTS_README.md`
 
 ### Submission Form
-**Project Name:** SkyMind WebOps - Autonomous Robotics Fleet Web Agent
+**Project Name:** RoboScout - Autonomous Robotics Fleet Web Agent
 
 **Short Description:**
 AI web agent that autonomously manages robotics fleets by interacting with enterprise dashboards, logistics systems, and operational tools in real-time. Features TinyFish automation + 3D digital twin visualization.
@@ -116,7 +116,7 @@ AI web agent that autonomously manages robotics fleets by interacting with enter
 
 **Links:**
 - Demo: https://sky-mind-nine.vercel.app/
-- GitHub: https://github.com/Tasfia-17/SkyMind
+- GitHub: https://github.com/Tasfia-17/RoboScout
 - Submission Form: https://forms.gle/VdDDP1fADVLiWE5MA
 
 **Tags:**
@@ -126,7 +126,7 @@ TinyFish, Web Agents, Robotics, Fleet Management, AI Automation, SaaS
 
 ## 🎤 Pitch Points (30 seconds)
 
-"SkyMind WebOps is an AI web agent that bridges physical robotics and digital operations.
+"RoboScout is an AI web agent that bridges physical robotics and digital operations.
 
 It uses TinyFish to scrape warehouse dashboards, weather sites, and maintenance systems. Gemini AI analyzes this web data plus robot telemetry to make autonomous decisions. Then it updates dashboards and coordinates the fleet.
 
@@ -141,7 +141,7 @@ We're the only web agent with 3D visualization and two-way automation."
 ## 📞 Social Media Post
 
 ```
-🌐 Just submitted SkyMind WebOps to the Web Agents Hackathon!
+🌐 Just submitted RoboScout to the Web Agents Hackathon!
 
 🤖 AI web agent that autonomously manages robotics fleets
 🔄 TinyFish integration for real website automation
@@ -153,7 +153,7 @@ Built for enterprise warehouse operations.
 Target: $30B market | Revenue: $99/robot/month SaaS
 
 🎮 Try it: https://sky-mind-nine.vercel.app/
-💻 Code: https://github.com/Tasfia-17/SkyMind
+💻 Code: https://github.com/Tasfia-17/RoboScout
 
 @tiny_fish @OSS4AI #WebAgents #AIAutomation #Robotics
 ```
@@ -187,7 +187,7 @@ fetch("https://agent.tinyfish.ai/v1/automation/run-sse", {
 
 ### Enterprise AI Prompts
 ```
-You are SkyMind WebOps, an autonomous fleet operations AI.
+You are RoboScout, an autonomous fleet operations AI.
 
 Decision priorities:
 1. Safety (battery < 20% = return to base)
@@ -241,4 +241,4 @@ Before submitting:
 
 **Built with ❤️ for autonomous web operations**
 
-🌐 **SkyMind WebOps** - Where physical robots meet digital automation
+🌐 **RoboScout** - Where physical robots meet digital automation
